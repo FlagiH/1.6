@@ -1,17 +1,55 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+@import './blocks/container/index.scss';
+@import './blocks/header/index.scss';
+@import './blocks/menu/index.scss';
+
+
+@font-face { 
+  font-family: "TT Lakes Medium";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: url("../fonts/TTLakes-Medium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/TTLakes-Medium.woff") format("woff"),
+  url("../fonts/TTLakes-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face { 
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/TTLakes-Regular.woff") format("woff"),
+  url("../fonts/TTLakes-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face { 
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakesCondensed-Bold.eot");
+  src: url("../fonts/TTLakesCondensed-Bold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/TTLakesCondensed-Bold.woff") format("woff"),
+  url("../fonts/TTLakesCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding: 0;
+  margin: 0;
+  color: #1B1C21;
 }
 
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  background-color: #fff;
 }
