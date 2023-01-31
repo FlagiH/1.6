@@ -1,0 +1,24 @@
+
+.button-icon {
+  border-radius: 50%;
+  background-color: #FF3E79;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  &--chel {
+    background-image: url('../img/chel.png')
+  }
+  
+  &--sms {
+    background-image: url('../img/sms.png')
+  }
+  
+  &--phone {
+    // background-image: url('../../../img/phone.png');
+    background-image: url('../img/phone.png')
+  }
+}

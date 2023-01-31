@@ -1,0 +1,33 @@
+.contacts {
+  margin-left: 24px;
+
+  &__button {
+    margin-right: 16px;
+  }
+  
+  
+  &__email {
+    margin-top: 16px;
+  }
+  
+  &__phone {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B1C21;
+    font-family: 'TT Lakes Bold';
+    margin-top: 12px;
+  }
+  
+  &__lang {
+    display: flex;
+      gap: 12px;
+      margin-top: 40px;
+      margin-bottom: 32px;
+  }
+  
+  &_language-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}

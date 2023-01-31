@@ -9,4 +9,11 @@
     height: 88px;
     background-color: #FFFFFF;
   }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    height: 88px;
+  }
 }
+

@@ -1,0 +1,32 @@
+.menu__container {
+  height: 100vh;
+  display: grid;
+  justify-items: baseline;
+  gap: 32px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+
+  &-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 24px;
+  }
+
+ &-button--active {
+  color: #7E7E82; 
+  position: relative;
+ }
+
+ &::before {
+  width: 4px;
+  height: 32px;
+  content: '';
+  display: inline-block;
+  background: #41F6D7;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  left: -24px;
+  top: -5px;
+ }
+}
