@@ -1,5 +1,9 @@
 .contacts {
-  margin-left: 24px;
+  margin-top: auto;
+
+  &__footer {
+    margin-left: 24px;
+  }
 
   &__button {
     margin-right: 16px;

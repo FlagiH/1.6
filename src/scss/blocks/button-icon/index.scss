@@ -21,4 +21,16 @@
     // background-image: url('../../../img/phone.png');
     background-image: url('../img/phone.png')
   }
+
+  &--back {
+    background-image: url('../img/back.png');
+    margin-right: 16px;
+    margin-left: 24px;
+  }
+
+  &--search {
+    background-image: url('../img/search.png');
+    margin-right: 24px;
+    margin-left: auto;
+  }
 }
