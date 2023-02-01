@@ -1,0 +1,33 @@
+.title {
+  &__button {
+    background-color: transparent;
+    display: flex;
+    outline: none;
+    border: none;
+    align-items: center;
+
+    @media (min-width: $screen-square) {
+      :last-child {
+        margin-right: 32px;
+      }
+    }
+
+    & + & {
+      margin-left: 32px;
+    }
+  }
+  
+  &__checkstatus, &__repair {
+    margin-left: 8px;
+  }
+
+  &__buttons_container {
+    display: none;
+
+    @media (min-width: $screen-square) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+  }
+}

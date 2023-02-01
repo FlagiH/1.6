@@ -1,12 +1,22 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@import './blocks/container/index.scss';
+@import './_variables.scss';
+
+@import './blocks/brands/index.scss';
 @import './blocks/header/index.scss';
 @import './blocks/menu/index.scss';
 @import './blocks/menu__container/index.scss';
 @import './blocks/contacts/index.scss';
 @import './blocks/button-icon/index.scss';
+@import './blocks/main/index.scss';
+@import './blocks/title/index.scss';
+@import './blocks/nav/index.scss';
+@import './blocks/section/index.scss';
+@import './blocks/button-divider/index.scss';
+@import './blocks/invisible/index.scss';
+@import './blocks/body/index.scss';
+@import './blocks/swiper/index.scss';
 
 
 @font-face { 
@@ -51,8 +61,4 @@ button {
   padding: 0;
   margin: 0;
   color: #1B1C21;
-}
-
-body {
-  background-color: #fff;
 }

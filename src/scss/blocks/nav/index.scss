@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  overflow: auto;
+
+  @media (min-width: 1120px) {
+    & {
+      flex-wrap: wrap;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 19.31px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    content: '';
+    display: block;
+  }
+  
+  &__button {
+    margin: 0 16px;
+    color: #7E7E82;
+    border: none;
+    white-space: nowrap;
+    background-color: transparent;
+    margin: 0 32px 0 0;
+
+    &--active {
+      padding-top: 8px;
+      padding-left: 17px;
+      padding-bottom: 8px;
+      padding-right: 17px;
+      background: #FFFFFF;
+      border: 2px solid #B8FFEC;
+      border-radius: 6px;
+    }
+  }
+}

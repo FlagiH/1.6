@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  
+  & > * {
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    & > * {
+      margin-left: 24px;
+    }
+  }
+
+  @media (min-width: $screen-square) {
+    & > * {
+      margin-left: 32px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    font-family: 'TT Lakes Bold';
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 40px;
+      background: #41F6D7;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__title {
+    display: flex;
+  }
+}

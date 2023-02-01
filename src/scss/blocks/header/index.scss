@@ -2,11 +2,46 @@
   height: 88px;
   background-color: #FFFFFF;
 
+  & > * {
+    margin-left: 16px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    & > * {
+      margin-left: 24px;
+    }
+  }
+
+  @media (min-width: $screen-square) {
+    display: none;
+
+    & > * {
+      margin-left: 32px;
+    }
+  }
+
   &__items {
     align-items: center;
     height: 88px;
     display: flex;
+
+    @media (min-width: $screen-tablet) {
+      .button-icon:last-child {
+        margin-right: 24px;
+      }
+    }
   }
 
   
+  &__logo {
+    background-image: url('../img/Group.png');
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 97px;
+    height: 51px;
+    border: none;
+    background-color: transparent;
+    margin: 0 16px;
+  }
 }

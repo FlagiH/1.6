@@ -1,0 +1,20 @@
+.body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: #F2F2F2;
+
+  &__container {
+    max-width: 1440px;
+    
+    @media (min-width: 1440px) {
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  &__contents {
+    max-width: 1120px;
+  }
+}

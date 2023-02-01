@@ -1,0 +1,66 @@
+.section {
+  margin-top: 24px;
+  justify-content: space-between;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+  }
+
+  &__img {
+    padding-bottom: 27px;
+    width: 100vw;
+    max-width: 531px;
+    margin-left: -16px;
+
+    @media (min-width: $screen-tablet) {
+      border-radius: 6px;
+      margin-left: 0px;
+    }
+
+    @media (min-width: $screen-square) {
+      margin-right: 32px;
+    }
+  }
+
+  &__text {
+    margin-right: 16px;
+    max-width: 490px;
+
+    & + & {
+      margin-top: 16px;
+    }
+
+    &--hidden {
+      display: none;
+
+      &--768 {
+        @media (min-width: $screen-tablet) {
+          display: block;
+        }
+      }
+
+      &--1120 {
+        @media (min-width: $screen-square) {
+          display: contents;
+        }
+      }
+    }
+  }
+  
+  &__button {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 16px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url('../img/icon.png');
+      width: 8px;
+      height: 11px;
+      margin-left: 24px;
+      margin-right: 16px;
+      margin-top: 24px;
+    }
+  }
+}
