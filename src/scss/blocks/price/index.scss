@@ -1,0 +1,19 @@
+.price {
+  margin-left: 0;
+
+  &__header {
+    padding: 16px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+  }
+
+  &__text {
+    color: #7E7E82;
+    text-transform: uppercase;
+    background-color: transparent;
+    &-button{
+      position: absolute;
+      left: 10px;
+      top: 12px;
+    }
+  }
+}

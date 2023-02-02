@@ -3,7 +3,7 @@ $text: #fff;
 
 @import './_variables.scss';
 
-@import './blocks/brands/index.scss';
+
 @import './blocks/header/index.scss';
 @import './blocks/menu/index.scss';
 @import './blocks/menu__container/index.scss';
@@ -17,6 +17,9 @@ $text: #fff;
 @import './blocks/invisible/index.scss';
 @import './blocks/body/index.scss';
 @import './blocks/swiper/index.scss';
+@import './blocks/brands/index.scss';
+@import './blocks/technics/index.scss';
+@import './blocks/price/index.scss';
 
 
 @font-face { 
