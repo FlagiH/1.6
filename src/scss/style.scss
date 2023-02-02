@@ -19,7 +19,7 @@ $text: #fff;
 @import './blocks/swiper/index.scss';
 @import './blocks/brands/index.scss';
 @import './blocks/technics/index.scss';
-@import './blocks/price/index.scss';
+@import './blocks/prices/index.scss';
 
 
 @font-face { 
@@ -64,4 +64,5 @@ button {
   padding: 0;
   margin: 0;
   color: #1B1C21;
+  box-sizing: border-box;
 }
