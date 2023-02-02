@@ -1,0 +1,28 @@
+.commercial {
+  &__information {
+    max-width: 288px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-family: 'TT Lakes';
+    margin-bottom: 16px;
+  }
+
+  &__offer {
+    max-width: 192px;
+    display: block;
+    position: relative;
+    text-decoration: none;  
+  }
+
+  &__arrow {
+    display: inline-block;
+    outline: none;
+    border: none;
+    width: 6px;
+    height: 24px;
+    background: url('../img/commercial_arrow.png') transparent no-repeat 50% 50%;
+    margin-left: 8px;
+    position: absolute;
+  }
+}

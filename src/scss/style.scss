@@ -2,7 +2,7 @@ $bgColor: #24292e;
 $text: #fff;
 
 @import './_variables.scss';
-
+@import './mixins.scss';
 
 @import './blocks/header/index.scss';
 @import './blocks/menu/index.scss';
@@ -20,6 +20,7 @@ $text: #fff;
 @import './blocks/brands/index.scss';
 @import './blocks/technics/index.scss';
 @import './blocks/prices/index.scss';
+@import './blocks/commercial/index.scss';
 
 
 @font-face { 
