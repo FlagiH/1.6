@@ -44,9 +44,13 @@
           display: contents;
         }
       }
+
+      &-read-more {
+        display: inherit;
+      }
     }
   }
-  
+
   &__button {
     border: none;
     background-color: transparent;
@@ -60,6 +64,10 @@
       height: 11px;
       margin-right: 16px;
       margin-top: 24px;
+    }
+
+    &--rotated::before {
+      transform: rotate(180deg);
     }
   }
 }
