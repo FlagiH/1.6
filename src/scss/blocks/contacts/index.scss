@@ -1,6 +1,10 @@
 .contacts {
   margin-top: auto;
 
+  @media (min-width: 1440px) {
+    margin-top: 240px;
+  }
+
   &__footer {
     margin-left: 24px;
   }

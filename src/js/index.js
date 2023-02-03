@@ -20,14 +20,6 @@ const readMoreButton = document.querySelector('.brands__button-read-more');
 const cuttedBlock = document.querySelector('.brands__block--cut');
 
 readMoreButton.addEventListener('click', function () {
-  // if container block has class 'container__block--cut'
-    // 1. reset max-height to show content  max-height: initial;
-    // 2. rotate before arrows; 
-    // 3. change text 'from read' more to 'hide'
-  // else
-    // 1. set max-height to 186px
-    // 2. reset before arrows
-    // 3. change text from 'hide' to 'read more'
 
   if (cuttedBlock.classList.contains('brands__block--cut')) {
     cuttedBlock.classList.remove('brands__block--cut');
@@ -39,5 +31,23 @@ readMoreButton.addEventListener('click', function () {
     readMoreButton.textContent = 'Показать все';
   }
 })
+
+const readMoreButtonTechnics = document.querySelector('.technics__button-read-more');
+const cuttedBlockTechnics = document.querySelector('.technics__block--cut');
+
+readMoreButtonTechnics.addEventListener('click', function () {
+
+  if (cuttedBlockTechnics.classList.contains('technics__block--cut')) {
+    cuttedBlockTechnics.classList.remove('technics__block--cut');
+    readMoreButtonTechnics.classList.add('technics__button-read-more--rotated')
+    readMoreButtonTechnics.textContent = 'Скрыть'; 
+  } else {
+    cuttedBlockTechnics.classList.add('technics__block--cut');
+    readMoreButtonTechnics.classList.remove('technics__button-read-more--rotated')
+    readMoreButtonTechnics.textContent = 'Показать все';
+  }
+})
+
+
 
 console.log(cuttedBlock);

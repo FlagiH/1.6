@@ -1,0 +1,45 @@
+.privacy-policy {
+  align-items: center;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'TT Lakes';
+    text-align: center;
+    color: #7e7e82;
+    opacity: 0.72;
+    margin-top: 16px;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 220px;
+      display: inline-block;
+      margin-bottom: 22px;
+
+      &:last-child {
+        text-align: end;
+      }
+
+      &:nth-child(2) {
+        align-self: start;
+      }
+
+      &:first-child {
+        text-align: start;
+        align-self: start;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 19px;
+    }
+  }
+}

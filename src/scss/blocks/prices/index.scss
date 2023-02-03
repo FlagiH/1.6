@@ -23,6 +23,10 @@
     display: flex;
     padding-bottom: 25px;
 
+    @media (min-width: 768px) {
+      display: none;
+    }
+
     &-list {
       width: 260px;
       min-width: 260px;

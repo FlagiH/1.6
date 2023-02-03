@@ -6,6 +6,10 @@
     letter-spacing: 0.2px;
     font-family: 'TT Lakes';
     margin-bottom: 16px;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 420px;
+    }
   }
 
   &__offer {
@@ -13,6 +17,9 @@
     display: block;
     position: relative;
     text-decoration: none;  
+    @media (min-width: $screen-tablet) {
+      max-width: 320px;
+    }
   }
 
   &__arrow {

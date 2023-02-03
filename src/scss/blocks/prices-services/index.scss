@@ -1,0 +1,89 @@
+.prices-services {
+  width: auto;
+  height: 340px;
+  background-color: #FFFFFF;
+  margin: 63px 12px 24px 12px;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0 16px;
+  display: none;
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+  }
+
+  @media (min-width: $screen-tablet) {
+    display: grid;
+  }
+
+  &-goods {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid #EAEAEA;;
+    }
+  }
+
+  &__header{
+    background-color: transparent;
+    position: absolute;
+    top: 86px;
+    color: #7E7E82;
+    opacity: 0.72;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+  }
+
+  &__procedure{
+    width: 400px;
+    @media (min-width: 1440px) {
+      width: 500px;
+    }
+  }
+
+  &__cost {
+    width: 100px;
+    @media (min-width: 1440px) {
+      width: 230px;
+    }
+  }
+
+  &__time {
+    width: 100px;
+    @media (min-width: 1440px) {
+      width: 230px;
+    }
+  }
+
+  &-button {
+    background: url('../img/play.png') #FF3E79 no-repeat;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    @include borderless;
+    width: 119px;
+    height: 32px;
+    background-position: 87%;
+    text-transform: uppercase;
+    font-family: 'TT Lakes Medium';
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+    padding-left: 12px;
+    text-align: left;
+    margin-right: 16px;
+    margin-left: auto;
+
+    &-hidden {
+      opacity: 0;
+    }
+  }
+}
