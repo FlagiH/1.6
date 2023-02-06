@@ -1,0 +1,97 @@
+.modal-call {
+  margin-top: 34px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  background-color: #fff;
+
+  &__button {
+    outline: none;
+    border: none;
+    margin-top: 16px;
+
+    &-order {
+      background: url('../img/play.png') #FF3E79 no-repeat;
+      border-radius: 16px;
+      outline: none;
+      border: none;
+      @include borderless;
+      width: 119px;
+      height: 32px;
+      background-position: 87%;
+      position: absolute;
+      bottom: 8%;
+      right: 5%;
+      text-transform: uppercase;
+      font-family: 'TT Lakes Medium';
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      font-size: 12px;
+      line-height: 24px;
+      color: white;
+      padding-left: 12px;
+      text-align: left;
+    }
+
+    &--h1 {
+      color: #1B1C21; 
+      position: relative;
+      font-family: 'TT Lakes Bold';
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      background-color: transparent;
+      margin-top: 40px;
+      margin-bottom: 8px;
+      margin-left: 16px;
+    }
+
+    &::before {
+      width: 4px;
+      height: 32px;
+      content: '';
+      display: inline-block;
+      background: #41F6D7;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      position: absolute;
+      left: -16px;
+      top: -5px;
+    }   
+  }
+
+  &__data {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  width: 290px;
+  height: 50px;
+  padding: 12px;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #B5B6BC;
+  margin: 16px;
+    
+  }
+
+  &__privacypolicy {
+    position: relative;
+    height: 150px;
+    max-width: 320px;
+
+    > p {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 16px;
+      color: #7E7E82;
+      margin: 0 16px;
+    }
+
+    &__colortext {
+      color: red;
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

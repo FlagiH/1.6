@@ -19,11 +19,11 @@
 
   &__block {
     display: flex;
-    overflow: hidden;
 
     @media (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      overflow: hidden;
     }
 
     &--cut {

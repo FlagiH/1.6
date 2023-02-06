@@ -50,18 +50,24 @@ readMoreButtonTechnics.addEventListener('click', function () {
 
 
 const readMoreSectionButton = document.querySelector('.section__button');
-const cuttedBlockSectionButton = document.querySelector('.section__text--hidden');
+const cuttedBlockSection = document.querySelector('.section__container');
 
 readMoreSectionButton.addEventListener('click', function () {
+  const texts = cuttedBlockSection.querySelectorAll('.section__text');
 
-  if (cuttedBlockSectionButton.classList.contains('section__text--hidden')) {
-    cuttedBlockSectionButton.classList.remove('section__text--hidden');
+  if (cuttedBlockSection.classList.contains('section__container--cut')) {
+    for (let i = 0; i < texts.length; i++) {
+      texts[i].classList.remove('section__text--hidden');
+    }
     readMoreSectionButton.classList.add('section__button--rotated');
+    cuttedBlockSection.classList.remove('section__container--cut')
     readMoreSectionButton.textContent = 'Скрыть';
   } else {
-    cuttedBlockSectionButton.classList.add('section__text--hidden');
+    for (let i = 0; i < texts.length; i++) {
+      texts[i].classList.add('section__text--hidden');
+    }
     readMoreSectionButton.classList.remove('section__button--rotated');
+    cuttedBlockSection.classList.add('section__container--cut')
     readMoreSectionButton.textContent = 'Показать все';
   }
 })
-console.log(cuttedBlock);
