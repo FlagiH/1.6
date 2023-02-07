@@ -16,7 +16,7 @@
   </head>
   <body class="body">
     <div class="body__container">
-      <div class="menu-container">
+      <div class="menu-container menu-container--hidden">
         <aside class="menu">
           <div class="menu__header">
             <div class="menu__items">
@@ -464,21 +464,21 @@
           </div>
         </main>
       </div>
-      <div class="modal-feedback">
+      <div class="modal-feedback modal-feedback--hidden">
         <button
           class="button-icon modal-feedback__button button-icon--back"
         ></button>
         <div>
-          <button class="modal-feedback__button modal-feedback__button--h1"
+          <button class="modal-feedback__header modal-feedback__header--h1"
             >Обратная связь</button
           >
         </div>
         <div class="modal-feedback__data">Имя</div>
         <div class="modal-feedback__data">Телефон</div>
         <div class="modal-feedback__data">Электронная почта</div>
-        <div class="modal-feedback__data">Сообщение</div>
+        <div class="modal-feedback__data modal-feedback__data--last-element">Сообщение</div>
         <div class="modal-feedback__privacypolicy">
-          <p
+          <p class="modal-feedback__privacypolicy-text"
             >Нажимая “отправить”, вы даете согласие на
             <span class="modal-feedback__privacypolicy__colortext"
               >обработку персональных данных</span
@@ -491,18 +491,18 @@
           <button class="modal-feedback__button-order">ОТПРАВИТЬ</button>
         </div>
       </div>
-      <div class="modal-call">
+      <div class="modal-call modal-call--hidden">
         <button
           class="button-icon modal-call__button button-icon--back"
         ></button>
         <div>
-          <button class="modal-call__button modal-call__button--h1"
+          <button class="modal-call__header modal-call__header--h1"
             >Заказать звонок</button
           >
         </div>
         <div class="modal-call__data">Телефон</div>
         <div class="modal-call__privacypolicy">
-          <p
+          <p class="modal-call__privacypolicy-text"
             >Нажимая “отправить”, вы даете согласие на
             <span class="modal-call__privacypolicy__colortext"
               >обработку персональных данных</span

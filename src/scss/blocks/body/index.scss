@@ -14,7 +14,12 @@
     }
   }
 
-  &__contents {
+  &__content {
+    display: block;
     max-width: 1120px;
+
+    @media (min-width: 1440px) {
+      margin-left: 320px;;
+    }
   }
 }

@@ -1,6 +1,12 @@
 .menu-container {
   height: 100vh;
-  display: none;
+  position: fixed;
+  z-index: 9;
+  overflow: scroll;
+
+  &--hidden {
+    display: none;
+  }
   
   @media (min-width: 1440px) {
     display: block;

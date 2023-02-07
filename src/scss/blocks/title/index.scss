@@ -6,12 +6,6 @@
     border: none;
     align-items: center;
 
-    @media (min-width: $screen-square) {
-      :last-child {
-        margin-right: 32px;
-      }
-    }
-
     & + & {
       margin-left: 32px;
     }
@@ -19,6 +13,12 @@
   
   &__checkstatus, &__repair {
     margin-left: 8px;
+  }
+
+  &__checkstatus {
+    @media (min-width: $screen-tablet) {
+      margin-right: 32px;
+    }
   }
 
   &__buttons_container {

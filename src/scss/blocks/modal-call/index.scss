@@ -4,10 +4,33 @@
   margin-left: 0;
   background-color: #fff;
 
+  @media (min-width: 1440px) {
+    min-width: 440px;
+    max-width: 440px; 
+    position: relative;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
   &__button {
     outline: none;
     border: none;
     margin-top: 16px;
+    margin-left: 16px;
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -98px;
+      margin-top: 32px;
+    }
+
+    &--back {
+      background-image: url('../img/back.png');
+      margin-right: 16px;
+      margin-left: 24px;
+    }
 
     &-order {
       background: url('../img/play.png') #FF3E79 no-repeat;
@@ -30,7 +53,18 @@
       color: white;
       padding-left: 12px;
       text-align: left;
+
+      @media (min-width: 1440px) {
+        bottom: 38%;
+        right: -22%;
+      }
     }
+  }
+
+  &__header {
+
+    outline: none;
+    border: none;
 
     &--h1 {
       color: #1B1C21; 
@@ -43,35 +77,39 @@
       margin-top: 40px;
       margin-bottom: 8px;
       margin-left: 16px;
-    }
 
-    &::before {
-      width: 4px;
-      height: 32px;
-      content: '';
-      display: inline-block;
-      background: #41F6D7;
-      transform: matrix(-1, 0, 0, 1, 0, 0);
-      position: absolute;
-      left: -16px;
-      top: -5px;
-    }   
+      &::before {
+        width: 4px;
+        height: 40px;
+        content: '';
+        display: inline-block;
+        background: #41F6D7;
+        border-radius: 2px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        position: absolute;
+        left: -16px;
+        top: -7px;
+      }   
+    }
   }
 
   &__data {
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 8px;
-  width: 290px;
-  height: 50px;
-  padding: 12px;
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #B5B6BC;
-  margin: 16px;
-    
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 290px;
+    height: 50px;
+    padding: 12px;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+    margin: 16px;
+
+    @media (min-width: 1440px) {
+      width: 380px;
+    }
   }
 
   &__privacypolicy {
@@ -79,12 +117,13 @@
     height: 150px;
     max-width: 320px;
 
-    > p {
+    &-text {
       font-family: 'TT Lakes';
       font-size: 14px;
       line-height: 16px;
       color: #7E7E82;
       margin: 0 16px;
+      width: 360px;
     }
 
     &__colortext {
