@@ -1,5 +1,6 @@
 import '../scss/style.scss'
 
+import './modals/modal-feedback';
 import './modals/modal-call';
 import './modals/menu';
 

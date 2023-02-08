@@ -5,14 +5,17 @@
   top: 0;
   right: 0;
   height: -webkit-fill-available;
+  z-index: 12;
+  overflow: auto;
 
   @media (min-width: 1440px) {
     min-width: 440px;
     max-width: 440px; 
     position: fixed;
+    overflow: inherit;
   }
 
-  &--hidden {
+  &--hidden { 
     display: none;
   }
 

@@ -16,11 +16,7 @@
   &--hidden {
     display: none;
   }
-
-  &--blur {
-    filter: opacity(0.4) blur(8px);
-  }
-
+  
   &__button {
     outline: none;
     border: none;
