@@ -21,6 +21,10 @@
     height: 88px;
   }
 
+  &__button--back {
+    margin-left: 16px;
+  }
+
   &__logo {
     background-image: url('../img/Group.png');
     outline: none;
@@ -30,8 +34,9 @@
     height: 51px;
     border: none;
     background-color: transparent;
-    margin: 0 8px;
+    margin: 0 22px;
   }
+
 
   &__container {
     display: grid;
@@ -45,22 +50,22 @@
       outline: none;
       border: none;
       margin-left: 24px;
-    }
-  
-    &-button--active {
-      color: #7E7E82; 
-      position: relative;
 
-      &::before {
-        width: 4px;
-        height: 32px;
-        content: '';
-        display: inline-block;
-        background: #41F6D7;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        position: absolute;
-        left: -24px;
-        top: -5px;
+      &--active {
+        color: #7E7E82; 
+        position: relative;
+  
+        &::before {
+          width: 4px;
+          height: 32px;
+          content: '';
+          display: inline-block;
+          background: #41F6D7;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+          position: absolute;
+          left: -24px;
+          top: -5px;
+        }
       }
     }
   }

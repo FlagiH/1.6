@@ -7,6 +7,11 @@
   &--hidden {
     display: none;
   }
+
+  &--blur {
+    filter: opacity(0.4) blur(8px);
+    overflow: hidden;
+  }
   
   @media (min-width: 1440px) {
     display: block;

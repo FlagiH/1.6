@@ -1,5 +1,8 @@
 import '../scss/style.scss'
 
+import './modals/modal-call';
+import './modals/menu';
+
 const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 'auto',
@@ -77,34 +80,7 @@ readMoreSectionButton.addEventListener('click', function () {
   }
 })
 
-//menu-container ! burger!
-
-const burgerButton = document.querySelector('.button-icon--burger');
-const menu = document.querySelector('.menu-container');
-const backButton = document.querySelector('.button-icon--back');
-const bodyContainer = document.querySelector('.body__content');
-
-burgerButton.addEventListener('click', function () {
-  if (menu.classList.contains('menu-container--hidden')) {
-    menu.classList.remove('menu-container--hidden');
-    bodyContainer.classList.add('body__content--hidden');
-  }
-})
-
-console.log(burgerButton);
-
-backButton.addEventListener('click', function () {
-  if (bodyContainer.classList.contains('body__content--hidden')) {
-    bodyContainer.classList.remove('body__content--hidden');
-    menu.classList.add('menu-container--hidden');
-  }
-})
-
-console.log(backButton);
-
 //modal function !
 
-const phoneButton = document.querySelector('.button-icon--phone');
 const smsButton = document.querySelector('.button-icon--sms');
 const modalFeedBack = document.querySelector('.modal-feedback');
-const madalCall = document.querySelector('.modal-call');

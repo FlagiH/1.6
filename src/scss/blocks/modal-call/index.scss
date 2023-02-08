@@ -1,17 +1,24 @@
 .modal-call {
-  margin-top: 34px;
-  margin-bottom: 20px;
   margin-left: 0;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: -webkit-fill-available;
+  z-index: 12;
 
   @media (min-width: 1440px) {
     min-width: 440px;
     max-width: 440px; 
-    position: relative;
+    position: fixed;
   }
 
   &--hidden {
     display: none;
+  }
+
+  &--blur {
+    filter: opacity(0.4) blur(8px);
   }
 
   &__button {

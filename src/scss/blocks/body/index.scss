@@ -18,6 +18,11 @@
     display: block;
     max-width: 1120px;
 
+    &--blur {
+      filter: opacity(0.4) blur(8px);
+      position: fixed;
+    }
+
     @media (min-width: 1440px) {
       margin-left: 320px;;
     }
