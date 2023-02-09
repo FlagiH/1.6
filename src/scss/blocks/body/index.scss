@@ -6,9 +6,9 @@
   background-color: #F2F2F2;
 
   &__container {
-    max-width: 1440px;
+    max-width: $screen-laptop;
     
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-laptop) {
       display: flex;
       margin: 0 auto;
     }
@@ -16,14 +16,14 @@
 
   &__content {
     display: block;
-    max-width: 1120px;
+    max-width: $screen-square;
 
     &--blur {
       filter: opacity(0.4) blur(8px);
       position: fixed;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-laptop) {
       margin-left: 320px;;
     }
   }

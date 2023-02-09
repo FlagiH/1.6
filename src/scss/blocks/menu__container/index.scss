@@ -2,18 +2,31 @@
   height: 100vh;
   position: fixed;
   z-index: 9;
-  overflow: scroll;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+  @media (min-width: $screen-laptop) {
+    display: block;
+  }
 
   &--hidden {
     display: none;
+
+    @media (min-width: $screen-laptop) {
+      display: block;
+    }
   }
 
   &--blur {
     filter: opacity(0.4) blur(8px);
     overflow: hidden;
-  }
-  
-  @media (min-width: 1440px) {
-    display: block;
+
+    @media (min-width: $screen-laptop) {
+      filter: none;
+      overflow: inherit;
+    }
   }
 }

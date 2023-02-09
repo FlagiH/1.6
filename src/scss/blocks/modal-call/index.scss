@@ -7,7 +7,7 @@
   height: -webkit-fill-available;
   z-index: 12;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-laptop) {
     min-width: 440px;
     max-width: 440px; 
     position: fixed;
@@ -23,7 +23,7 @@
     margin-top: 16px;
     margin-left: 16px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-laptop) {
       position: absolute;
       left: -98px;
       margin-top: 32px;
@@ -57,7 +57,7 @@
       padding-left: 12px;
       text-align: left;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $screen-laptop) {
         bottom: 38%;
         right: -22%;
       }
@@ -110,12 +110,12 @@
     color: #B5B6BC;
     margin: 16px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-laptop) {
       width: 380px;
     }
   }
 
-  &__privacypolicy {
+  &__privacy-policy {
     position: relative;
     height: 150px;
     max-width: 320px;
@@ -129,7 +129,7 @@
       width: 360px;
     }
 
-    &__colortext {
+    &-color-text {
       color: red;
       font-family: 'TT Lakes';
       font-size: 14px;

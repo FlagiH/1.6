@@ -12,7 +12,7 @@
     }
   }
 
-  @media (min-width: $screen-square) {
+  @media (min-width: $screen-laptop) {
     display: none;
 
     & > * {

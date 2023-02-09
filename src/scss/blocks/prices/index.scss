@@ -23,7 +23,7 @@
     display: flex;
     padding-bottom: 25px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       display: none;
     }
 

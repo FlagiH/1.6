@@ -1,7 +1,7 @@
 .contacts {
   margin-top: auto;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-laptop) {
     margin-top: 240px;
   }
 

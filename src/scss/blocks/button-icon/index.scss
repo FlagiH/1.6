@@ -20,7 +20,7 @@
   &--phone {
     background-image: url('../img/phone.png');
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-left: auto;
     }
   }
@@ -29,7 +29,7 @@
     background-image: url('../img/back.png');
     
     &--hidden--1440 {
-      @media (min-width: 1440px) {
+      @media (min-width: $screen-laptop) {
         display: none;
       }
     }
@@ -49,11 +49,11 @@
     background-image: url('../img/burger.png');
     margin-right: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-left: 0;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-square) {
       margin-right: 0;
     }
   }

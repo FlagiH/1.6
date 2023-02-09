@@ -20,7 +20,7 @@
   &__block {
     display: flex;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       display: flex;
       flex-wrap: wrap;
       overflow: hidden;
@@ -30,7 +30,7 @@
       max-height: 186px;
       padding-bottom: 50px;
 
-      @media (min-width: 768px) {
+      @media (min-width: $screen-tablet) {
         padding-bottom: 0;
       }
     }
@@ -66,14 +66,14 @@
     align-items: center;
     margin-left: 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-tablet) {
       margin-left: 24px;
       max-width: 224px;
       min-width: 224px;
       width: 224px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: $screen-square) {
       margin-left: 32px;
     }
 

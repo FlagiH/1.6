@@ -6,9 +6,9 @@
   min-height: 100%;
   background-color: #FFFFFF;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-laptop) {
     box-shadow: none;
-    height: 300%;
+    height: 200%;
   }
 
   &__header {
@@ -43,8 +43,8 @@
     justify-items: baseline;
     gap: 32px;
     margin-top: 34px;
-    margin-bottom: 20px;
-
+    margin-bottom: 32px;
+    
     &-button {
       background-color: transparent;
       outline: none;
