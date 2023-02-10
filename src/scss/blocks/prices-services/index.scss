@@ -1,7 +1,7 @@
 .prices-services {
   width: auto;
   height: 340px;
-  background-color: #FFFFFF;
+  background-color: $background-header-color;
   margin: 63px 12px 24px 12px;
   align-items: center;
   border-radius: 6px;
@@ -9,10 +9,10 @@
   display: none;
 
   &__text {
-    font-size: 14px;
+    font-size: $font-size-medium;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #1B1C21;
+    color: $text-color-main;
   }
 
   @media (min-width: $screen-tablet) {
@@ -25,7 +25,7 @@
     align-items: center;
     
     &:not(:last-child) {
-      border-bottom: 1px solid #EAEAEA;;
+      border-bottom: 1px solid $background-border-color;
     }
   }
 
@@ -33,36 +33,39 @@
     background-color: transparent;
     position: absolute;
     top: 86px;
-    color: #7E7E82;
+    color: $text-color-muted;
     opacity: 0.72;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size-medium;
+    line-height: $line-height-privacy-policy;
     display: flex;
+    width: 100%;
+    padding-right: 45px;
   }
 
   &__procedure{
     width: 400px;
-    @media (min-width: $screen-laptop) {
+    @media (min-width: $screen-square) {
       width: 500px;
     }
   }
 
   &__cost {
     width: 100px;
-    @media (min-width: $screen-laptop) {
+    @media (min-width: $screen-square) {
       width: 220px;
     }
   }
 
   &__time {
     width: 100px;
-    @media (min-width: $screen-laptop) {
+    margin-left: auto;
+    @media (min-width: $screen-square) {
       width: 220px;
     }
   }
 
   &-button {
-    background: url('../img/play.png') #FF3E79 no-repeat;
+    background: url('../img/play.png') $background-icon-color no-repeat;
     border-radius: 16px;
     outline: none;
     border: none;
@@ -71,11 +74,11 @@
     height: 32px;
     background-position: 87%;
     text-transform: uppercase;
-    font-family: 'TT Lakes Medium';
+    font-family: $font-medium;
     font-weight: 700;
     letter-spacing: 0.8px;
     font-size: 12px;
-    line-height: 24px;
+    line-height: $line-height-regular;
     color: white;
     padding-left: 12px;
     text-align: left;

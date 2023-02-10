@@ -24,7 +24,7 @@
   
   &__button {
     margin: 0 16px;
-    color: #7E7E82;
+    color: $text-color-muted;
     border: none;
     white-space: nowrap;
     background-color: transparent;
@@ -35,7 +35,7 @@
       padding-left: 17px;
       padding-bottom: 8px;
       padding-right: 17px;
-      background: #FFFFFF;
+      background: $background-header-color;
       border: 2px solid #B8FFEC;
       border-radius: 6px;
     }

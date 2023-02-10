@@ -1,9 +1,9 @@
 .body {
-  background-color: #fff;
+  background-color: $background-header-color;
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background-color: #F2F2F2;
+  background-color: $background-main-color;
 
   &__container {
     max-width: $screen-laptop;

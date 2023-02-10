@@ -1,6 +1,6 @@
 .header {
   height: 88px;
-  background-color: #FFFFFF;
+  background-color: $background-header-color;
 
   & > * {
     margin-left: 16px;

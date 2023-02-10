@@ -1,6 +1,6 @@
 .modal-call {
   margin-left: 0;
-  background-color: #fff;
+  background-color: $background-header-color;
   position: fixed;
   top: 0;
   right: 0;
@@ -36,7 +36,7 @@
     }
 
     &-order {
-      background: url('../img/play.png') #FF3E79 no-repeat;
+      background: url('../img/play.png') $background-icon-color no-repeat;
       border-radius: 16px;
       outline: none;
       border: none;
@@ -48,7 +48,7 @@
       bottom: 8%;
       right: 5%;
       text-transform: uppercase;
-      font-family: 'TT Lakes Medium';
+      font-family: $font-medium;
       font-weight: 700;
       letter-spacing: 0.8px;
       font-size: 12px;
@@ -70,11 +70,11 @@
     border: none;
 
     &--h1 {
-      color: #1B1C21; 
+      color: $text-color-main; 
       position: relative;
-      font-family: 'TT Lakes Bold';
-      font-size: 24px;
-      line-height: 32px;
+      font-family: $font-bold;
+      font-size: $font-size-bold;
+      line-height: $line-height-bold;
       letter-spacing: -0.6px;
       background-color: transparent;
       margin-top: 40px;
@@ -97,15 +97,15 @@
   }
 
   &__data {
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    background: $background-header-color;
+    border: 1px solid $background-border-color;
     border-radius: 8px;
     width: 290px;
     height: 50px;
     padding: 12px;
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    line-height: 24px;
+    font-family: $font-regular;
+    font-size: $font-size-regular;
+    line-height: $line-height-regular;
     letter-spacing: -0.2px;
     color: #B5B6BC;
     margin: 16px;
@@ -121,18 +121,18 @@
     max-width: 320px;
 
     &-text {
-      font-family: 'TT Lakes';
-      font-size: 14px;
+      font-family: $font-regular;
+      font-size: $font-medium;
       line-height: 16px;
-      color: #7E7E82;
+      color: $text-color-muted;
       margin: 0 16px;
       width: 360px;
     }
 
     &-color-text {
       color: red;
-      font-family: 'TT Lakes';
-      font-size: 14px;
+      font-family: $font-regular;
+      font-size: $font-size-medium;
       line-height: 16px;
     }
   }

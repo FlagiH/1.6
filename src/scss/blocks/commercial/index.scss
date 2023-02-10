@@ -1,10 +1,10 @@
 .commercial {
   &__information {
     max-width: 288px;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
     letter-spacing: 0.2px;
-    font-family: 'TT Lakes';
+    font-family: $font-regular;
     margin-bottom: 16px;
 
     @media (min-width: $screen-tablet) {
@@ -12,7 +12,9 @@
     }
   }
 
+
   &__offer {
+    font-size: $font-size-regular;
     max-width: 192px;
     display: block;
     position: relative;

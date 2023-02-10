@@ -61,9 +61,9 @@
               <div class="contacts__email"><a href="#">mail@cps.com</a></div>
               <div><p class="contacts__phone">8 800 890 8900</p></div>
               <div class="contacts__lang">
-                <button class="contacts__language-button">RU</button>
-                <button class="contacts__language-button">EN</button>
-                <button class="contacts__language-button">CH</button>
+                <button class="contacts__lang-button contacts__lang-button--active">RU</button>
+                <button class="contacts__lang-button">EN</button>
+                <button class="contacts__lang-button">CH</button>
               </div>
             </div>
           </div>
@@ -473,10 +473,12 @@
             >Обратная связь</button
           >
         </div>
-        <div class="modal-feedback__data">Имя</div>
-        <div class="modal-feedback__data">Телефон</div>
-        <div class="modal-feedback__data">Электронная почта</div>
-        <div class="modal-feedback__data modal-feedback__data--last-element">Сообщение</div>
+        <div class="modal-feedback-input">
+          <input placeholder="Имя" class="modal-feedback__data modal-feedback__data-name"></input>
+          <input placeholder="Телефон" class="modal-feedback__data modal-feedback__data-phone"></input>
+          <input placeholder="Электронная почта" class="modal-feedback__data email"></input>
+          <input placeholder="Сообщение" class="modal-feedback__data  modal-feedback__data-sms modal-feedback__data--last-element"></input>
+        </div>
         <div class="modal-feedback__privacy-policy">
           <p class="modal-feedback__privacy-policy-text"
             >Нажимая “отправить”, вы даете согласие на
@@ -500,7 +502,7 @@
             >Заказать звонок</button
           >
         </div>
-        <div class="modal-call__data">Телефон</div>
+        <input class="modal-call__data" placeholder="Телефон"></input>
         <div class="modal-call__privacy-policy">
           <p class="modal-call__privacy-policy-text"
             >Нажимая “отправить”, вы даете согласие на

@@ -11,9 +11,9 @@
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 16px;
-    font-family: 'TT Lakes';
+    font-size: $font-size-medium;
+    line-height: $line-height-privacy-policy;
+    font-family: $font-regular;
     text-align: center;
     color: #7e7e82;
     opacity: 0.72;

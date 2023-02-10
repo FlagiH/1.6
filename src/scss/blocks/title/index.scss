@@ -16,7 +16,7 @@
   }
 
   &__checkstatus {
-    @media (min-width: $screen-tablet) {
+    @media (min-width: $screen-tablet) {  
       margin-right: 32px;
     }
   }
@@ -24,7 +24,7 @@
   &__buttons_container {
     display: none;
 
-    @media (min-width: $screen-square) {
+    @media (min-width: $screen-laptop) {
       display: flex;
       align-items: center;
       margin-left: auto;

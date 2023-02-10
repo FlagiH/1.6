@@ -4,7 +4,7 @@
 
   &__divider {
     &--left {
-      background-color: #EAEAEA;
+      background-color: $background-border-color;
       margin-left: 6px;
       display: none;
 
@@ -17,7 +17,7 @@
   
     &--right {
       margin-right: auto;
-      background-color: #EAEAEA;
+      background-color: $background-border-color;
 
       @media (min-width: $screen-tablet) {
         margin-right: 24px;

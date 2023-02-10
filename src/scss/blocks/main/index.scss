@@ -19,11 +19,11 @@
 
   &__header {
     display: flex;
-    font-family: 'TT Lakes Bold';
+    font-family: $font-bold;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
-    color: #1B1C21;
+    color: $text-color-main;
     margin-top: 24px;
     margin-bottom: 24px;
 

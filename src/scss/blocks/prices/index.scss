@@ -3,19 +3,19 @@
 
   &__header {
     padding: 16px;
-    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+    background: linear-gradient(270deg, $background-header-color 0%, #F8F8F8 98.61%);
   }
 
   &__text {
-    color: #7E7E82;
+    color: $text-color-muted;
     text-transform: uppercase;
     background-color: transparent;
 
     &-header {
       background-color: transparent; 
-      color: #7E7E82;
-      font-size: 14px;
-      line-height: 16px;
+      color: $text-color-muted;
+      font-size: $font-size-medium;
+      line-height: $line-height-privacy-policy;
     }
   }
 
@@ -32,7 +32,7 @@
       min-width: 260px;
       max-width: 260px;
       height: 200px;
-      background-color: #FFFFFF;
+      background-color: $background-header-color;
       border-radius: 6px;
       margin: 16px 0 16px 16px;
       position: relative;
@@ -43,12 +43,12 @@
   }
 
   &__list {
-    font-size: 14px;
+    font-size: $font-size-medium;
     line-height: 18px;
   }
 
   &__button {
-    background: url('../img/play.png') #FF3E79 no-repeat;
+    background: url('../img/play.png') $background-icon-color no-repeat;
     border-radius: 16px;
     outline: none;
     border: none;
@@ -60,11 +60,11 @@
     bottom: 8%;
     right: 5%;
     text-transform: uppercase;
-    font-family: 'TT Lakes Medium';
+    font-family: $font-medium;
     font-weight: 700;
     letter-spacing: 0.8px;
     font-size: 12px;
-    line-height: 24px;
+    line-height: $line-height-regular;
     color: white;
     padding-left: 12px;
     text-align: left;
