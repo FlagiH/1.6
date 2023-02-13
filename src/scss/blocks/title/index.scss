@@ -6,6 +6,10 @@
     border: none;
     align-items: center;
 
+    &:hover {
+      text-shadow: 3px 0px 10px deepskyblue;
+    }
+
     & + & {
       margin-left: 32px;
     }
