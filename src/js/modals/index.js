@@ -42,8 +42,6 @@ body.addEventListener('click', (event) => {
     }
   }
 
-  console.log(openModals, ismodal)
-
   if (openModals.length && ismodal) {
     closeModalDictionary[openModals[openModals.length - 1]]();
   }

@@ -4,6 +4,7 @@ import './modals/index'
 import './modals/modal-feedback';
 import './modals/modal-call';
 import './modals/menu';
+import './modals/menu-container';
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
@@ -86,3 +87,11 @@ readMoreSectionButton.addEventListener('click', function () {
 
 const smsButton = document.querySelector('.button-icon--sms');
 const modalFeedBack = document.querySelector('.modal-feedback');
+
+
+
+
+
+
+
+
