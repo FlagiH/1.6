@@ -85,8 +85,21 @@
     margin-right: 16px;
     margin-left: auto;
 
+    &:hover {
+      animation: click 0.05s alternate linear infinite;
+    }
+
     &-hidden {
       opacity: 0;
     }
+  }
+}
+
+@keyframes click {
+  to {
+    transform: translate(10px);
+  }
+  from {
+    transform: translate(-10px);
   }
 }

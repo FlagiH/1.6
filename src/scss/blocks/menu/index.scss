@@ -51,7 +51,9 @@
       border: none;
       margin-left: 24px;
 
-      
+      &:hover {
+        text-shadow: 10px 6px 2px tomato;
+      }
 
       &--active {
         color: $text-color-muted; 
@@ -72,4 +74,5 @@
     }
   }
 }
+
 

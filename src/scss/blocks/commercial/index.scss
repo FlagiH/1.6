@@ -22,6 +22,11 @@
     @media (min-width: $screen-tablet) {
       max-width: 320px;
     }
+
+    &:hover{
+      background-image: linear-gradient(to right, #e7484f, #f68b1d, #fced00, #009e4f, #00aac3, #732982);
+      animation: slidebg 2s alternate linear infinite;
+    }
   }
 
   &__arrow {
@@ -33,5 +38,12 @@
     background: url('../img/commercial_arrow.png') transparent no-repeat 50% 50%;
     margin-left: 8px;
     position: absolute;
+  }
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
   }
 }
