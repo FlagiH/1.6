@@ -6,6 +6,7 @@ import './modals/modal-call';
 import './modals/menu';
 import './modals/menu-container';
 import './modals/nav';
+import './modals/read-more';
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
@@ -59,35 +60,7 @@ readMoreButtonTechnics.addEventListener('click', function () {
   }
 })
 
-//read-more button main!
 
-const readMoreSectionButton = document.querySelector('.section__button');
-const cuttedBlockSection = document.querySelector('.section__container');
-
-readMoreSectionButton.addEventListener('click', function () {
-  const texts = cuttedBlockSection.querySelectorAll('.section__text');
-
-  if (cuttedBlockSection.classList.contains('section__container--cut')) {
-    for (let i = 0; i < texts.length; i++) {
-      texts[i].classList.remove('section__text--hidden');
-    }
-    readMoreSectionButton.classList.add('section__button--rotated');
-    cuttedBlockSection.classList.remove('section__container--cut')
-    readMoreSectionButton.textContent = 'Скрыть';
-  } else {
-    for (let i = 0; i < texts.length; i++) {
-      texts[i].classList.add('section__text--hidden');
-    }
-    readMoreSectionButton.classList.remove('section__button--rotated');
-    cuttedBlockSection.classList.add('section__container--cut')
-    readMoreSectionButton.textContent = 'Показать все';
-  }
-})
-
-//modal function !
-
-const smsButton = document.querySelector('.button-icon--sms');
-const modalFeedBack = document.querySelector('.modal-feedback');
 
 
 
