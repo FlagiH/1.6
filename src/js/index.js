@@ -5,6 +5,7 @@ import './modals/modal-feedback';
 import './modals/modal-call';
 import './modals/menu';
 import './modals/menu-container';
+import './modals/nav';
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
