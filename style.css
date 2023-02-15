@@ -57,7 +57,10 @@
     height: 51px;
     border: none;
     background-color: transparent;
-    margin: 0 22px; }
+    margin: 0 22px;
+    transition: box-shadow  0.5s linear; }
+    .menu__logo:hover {
+      box-shadow: 0px 0px 19px 25px blue; }
   .menu__container {
     display: grid;
     justify-items: baseline;
@@ -109,7 +112,7 @@
       .menu-container--blur {
         -webkit-filter: none;
                 filter: none;
-        overflow: inherit; } }
+        overflow: auto; } }
 
 .contacts {
   margin-top: auto; }
@@ -286,20 +289,21 @@
       .nav::after {
         display: none; } }
   .nav__button {
-    margin: 0 16px;
-    color: #7E7E82;
     border: none;
     white-space: nowrap;
     background-color: transparent;
-    margin: 0 32px 0 0; }
+    margin: 0 32px 0 0;
+    padding: 10px 18px; }
+    .nav__button:hover {
+      padding: 8px 17px;
+      background: #ffffff;
+      border: 2px solid #B8FFEC;
+      border-radius: 6px; }
     .nav__button, .nav__button a {
       text-decoration: none;
       color: #7E7E82; }
     .nav__button--active {
-      padding-top: 8px;
-      padding-left: 17px;
-      padding-bottom: 8px;
-      padding-right: 17px;
+      padding: 8px 17px;
       background: #ffffff;
       border: 2px solid #B8FFEC;
       border-radius: 6px; }
@@ -314,6 +318,7 @@
     padding-bottom: 27px;
     width: 100vw;
     max-width: 531px;
+    max-height: 320px;
     margin-left: -16px; }
     @media (min-width: 768px) {
       .section__img {
@@ -349,7 +354,10 @@
   .section__button {
     border: none;
     background-color: transparent;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    transition: transform 0.5s linear; }
+    .section__button:hover {
+      transform: scale(1.5); }
     .section__button::before {
       content: '';
       display: inline-block;
@@ -487,11 +495,14 @@
       left: 36px;
       top: 24px;
       display: none;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
       transition: transform 0.5s linear; }
       @media (min-width: 768px) {
         .brands__button-read-more {
           display: block; } }
+      @media (min-width: 1120px) {
+        .brands__button-read-more {
+          margin-bottom: 50px; } }
       .brands__button-read-more::before {
         content: '';
         display: inline-block;
@@ -509,7 +520,8 @@
       margin-left: 16px; }
 
 .technics {
-  margin-left: 0; }
+  margin-left: 0;
+  margin-top: 25px; }
   .technics__header {
     padding: 16px;
     background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%); }
@@ -570,7 +582,8 @@
         margin-left: 24px;
         max-width: 224px;
         min-width: 224px;
-        width: 224px; } }
+        width: 224px;
+        margin-top: 24px; } }
     @media (min-width: 1120px) {
       .technics__button {
         margin-left: 32px; } }
@@ -584,11 +597,14 @@
       left: 36px;
       top: 24px;
       display: none;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
       transition: transform 0.5s linear; }
       @media (min-width: 768px) {
         .technics__button-read-more {
           display: block; } }
+      @media (min-width: 1120px) {
+        .technics__button-read-more {
+          margin-bottom: 50px; } }
       .technics__button-read-more::before {
         content: '';
         display: inline-block;
@@ -606,7 +622,8 @@
       margin-left: 16px; }
 
 .prices {
-  margin-left: 0; }
+  margin-left: 0;
+  margin-top: 25px; }
   .prices__header {
     padding: 16px;
     background: linear-gradient(270deg, #ffffff 0%, #F8F8F8 98.61%); }
@@ -673,6 +690,9 @@
   @media (min-width: 768px) {
     .commercial__information {
       max-width: 420px; } }
+  @media (min-width: 1440px) {
+    .commercial__information {
+      margin-top: 8px; } }
 
 .commercial__offer {
   font-size: 16px;
@@ -707,14 +727,15 @@
     background-position: 20vw; } }
 
 .privacy-policy {
-  align-items: center; }
+  align-items: center;
+  margin-top: 60px; }
   @media (min-width: 768px) {
     .privacy-policy {
       display: flex;
       justify-content: space-between; } }
   @media (min-width: 1440px) {
     .privacy-policy {
-      margin: 0 30px; } }
+      margin: 80px 30px 0 30px; } }
   .privacy-policy__text {
     font-size: 14px;
     line-height: 16px;
