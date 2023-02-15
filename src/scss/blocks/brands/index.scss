@@ -87,11 +87,15 @@
       left: 36px;
       top: 24px;
       display: none;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
       transition: transform 0.5s linear;
 
       @media (min-width: $screen-tablet) {
         display: block;
+      }
+
+      @media (min-width: $screen-square) {
+        margin-bottom: 50px;
       }
 
       &::before {

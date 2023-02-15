@@ -1,5 +1,6 @@
 .technics {
   margin-left: 0;
+  margin-top: 25px  ;
 
   &__header {
     padding: 16px;
@@ -77,6 +78,7 @@
       max-width: 224px;
       min-width: 224px;
       width: 224px;
+      margin-top: 24px;
     }
 
     @media (min-width: $screen-square) {
@@ -95,11 +97,15 @@
       left: 36px;
       top: 24px;
       display: none;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
       transition: transform 0.5s linear;
 
       @media (min-width: $screen-tablet) {
         display: block;
+      }
+
+      @media (min-width: $screen-square) {
+        margin-bottom: 50px;
       }
 
       &::before {
