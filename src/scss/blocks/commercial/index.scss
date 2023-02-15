@@ -10,6 +10,10 @@
     @media (min-width: $screen-tablet) {
       max-width: 420px;
     }
+
+    @media (min-width: $screen-laptop) {
+      margin-top: 8px;
+    }
   }
 
 

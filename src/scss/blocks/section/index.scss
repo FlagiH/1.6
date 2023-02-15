@@ -11,6 +11,7 @@
     padding-bottom: 27px;
     width: 100vw;
     max-width: 531px;
+    max-height: 320px;
     margin-left: -16px;
 
     @media (min-width: $screen-tablet) {
@@ -69,6 +70,11 @@
     border: none;
     background-color: transparent;
     margin-bottom: 16px;
+    transition: transform 0.5s linear;
+
+    &:hover {
+      transform: scale(1.5);  
+    }
 
     &::before {
       content: '';

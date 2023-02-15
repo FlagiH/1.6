@@ -2,3 +2,10 @@
   border: none;
   outline: none;
 }
+
+@mixin nav-active {
+  padding: 8px 17px;
+  background: $background-header-color;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+}
