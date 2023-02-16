@@ -11,6 +11,7 @@
     color: $text-color-muted;
     text-transform: uppercase;
     background-color: transparent;
+    font-family: $font-regular;
 
     &-header {
       background-color: transparent; 
@@ -40,6 +41,10 @@
       display: grid;
       padding: 16px;
       align-content: space-between;
+
+      &:last-child {
+        margin-right: 16px;
+      }
     }
   }
 

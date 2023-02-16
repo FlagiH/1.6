@@ -10,6 +10,7 @@
     color: $text-color-muted;
     text-transform: uppercase;
     background-color: transparent;
+    font-family: $font-regular;
   }
   
   &__block {
@@ -89,6 +90,7 @@
       display: none;
       margin-bottom: 32px;
       transition: transform 0.5s linear;
+      background-color: transparent;
 
       @media (min-width: $screen-tablet) {
         display: block;

@@ -16,11 +16,14 @@
 
     @media (min-width: $screen-tablet) {
       border-radius: 6px;
-      margin-left: 0px;
+      margin-left: 48px;
+      margin-right: 24px;
+      max-width: 360px;
     }
 
     @media (min-width: $screen-square) {
       margin-right: 32px;
+      max-width: 531px;
     }
   }
 

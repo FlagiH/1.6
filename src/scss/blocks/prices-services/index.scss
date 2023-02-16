@@ -40,6 +40,10 @@
     display: flex;
     width: 100%;
     padding-right: 45px;
+
+    & > * {
+      font-family: $font-regular;
+    }
   }
 
   &__procedure{

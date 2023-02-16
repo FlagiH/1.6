@@ -30,8 +30,12 @@
   &__lang {
     display: flex;
     gap: 12px;
-    margin-top: 40px;
+    margin-top: 8px;
     margin-bottom: 32px;
+
+    @media (min-width: $screen-tablet) {
+      margin-top: 40px;
+    }
 
     &-button {
       background-color: transparent;

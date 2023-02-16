@@ -11,6 +11,8 @@
     color: $text-color-muted;
     text-transform: uppercase;
     background-color: transparent;
+    font-family: $font-regular;
+    
     &-button {
       position: absolute;
       left: 10px;
@@ -18,7 +20,7 @@
     }
   }
 
-  &__block {
+  &__block {  
     display: flex;
 
     @media (min-width: $screen-tablet) {
@@ -99,6 +101,7 @@
       display: none;
       margin-bottom: 32px;
       transition: transform 0.5s linear;
+      background-color: transparent;
 
       @media (min-width: $screen-tablet) {
         display: block;
