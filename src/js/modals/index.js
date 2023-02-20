@@ -26,29 +26,29 @@ const disableBLur = () => {
   }
 }
 
-const modalNameList = ['menu', 'modal-call', 'modal-feedback'];
+const modalNameList = ['menu-modal', 'modal-call', 'modal-feedback'];
 
 const body = document.querySelector('.body__container');
 
 body.addEventListener('click', (event) => {
   const classList = event.target.classList; // target click classes;
-  let ismodal = false;
+  let isModal = false;
 
   for (let i = 0; i < classList.length; i++) {
     for (let j = 0; j < modalNameList.length; j++) {
-      if (!find(modalNameList[j], classList[i])) {
-        ismodal = true;
+      if (find(modalNameList[j], classList[i])) {
+        isModal = true;
       }
     }
   }
 
-  if (openModals.length && ismodal) {
+  if (openModals.length && !isModal) {
     closeModalDictionary[openModals[openModals.length - 1]]();
   }
 })
 
 const closeModalDictionary = {
-  menu: closeMenuModal,
+  'menu-modal': closeMenuModal,
   'modal-feedback': closeFeedbackModal,
   'modal-call': closeCallModal
 }

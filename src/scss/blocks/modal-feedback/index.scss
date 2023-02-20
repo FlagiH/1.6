@@ -119,8 +119,12 @@
     font-size: $font-size-regular;
     line-height: $line-height-regular;
     letter-spacing: -0.2px;
-    color: #B5B6BC;
+    color: $text-color-main;
     margin: 8px;
+
+    &:placeholder {
+      color: #B5B6BC;
+    }
 
     @media (min-width: $screen-laptop) {
       width: 380px;
@@ -156,6 +160,7 @@
       font-size: $font-size-medium;
       line-height: 16px;
       text-decoration: none;
+      letter-spacing: 0.8px;
     }
   }
 }

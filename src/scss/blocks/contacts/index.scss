@@ -12,7 +12,10 @@
   &__button {
     margin-right: 16px;
   }
-  
+
+  a[href^="tel:"] {
+    text-decoration: none;
+  }
   
   &__email {
     margin-top: 16px;

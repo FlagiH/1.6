@@ -11,7 +11,7 @@ burgerButton.addEventListener('click', function (e) {
   if (menu.classList.contains('menu-container--hidden')) {
     menu.classList.remove('menu-container--hidden');
     bodyContainer.classList.add('body__content--blur');
-    openModals.push('menu')
+    openModals.push('menu-modal')
   }
 })
 

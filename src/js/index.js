@@ -7,8 +7,9 @@ import './modals/menu';
 import './menu/menu-container';
 import './button/nav';
 import './button/read-more';
+import './button/lang'
 
-const swiper = new Swiper('.swiper', {
+const swiperOptions = {
   // Default parameters
   slidesPerView: 'auto',
   allowTouchMove: true, 
@@ -22,7 +23,19 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     type: 'bullets',
   },
+};
+
+const swiperBrands = new Swiper('.brands__swiper', swiperOptions);
+const swiperTechnics = new Swiper('.technics__swiper', swiperOptions);
+const swiperDevices = new Swiper('.prices', swiperOptions);
+
+addEventListener('resize', (e) => {
+  if (e.currentTarget.innerWidth >= 768) {
+    swiperBrands.slideTo(0);
+    swiperTechnics.slideTo(0);
+  }
 })
+
 
 //brands__box-read-more! 
 
