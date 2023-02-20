@@ -1,12 +1,10 @@
-$bgColor: #24292e;
-$text: #fff;
 
 @import './_variables.scss';
 @import './mixins.scss';
 
 @import './blocks/header/index.scss';
 @import './blocks/menu/index.scss';
-@import './blocks/menu__container/index.scss';
+@import './blocks/menu-container/index.scss';
 @import './blocks/contacts/index.scss';
 @import './blocks/button-icon/index.scss';
 @import './blocks/main/index.scss';
@@ -21,7 +19,7 @@ $text: #fff;
 @import './blocks/technics/index.scss';
 @import './blocks/prices/index.scss';
 @import './blocks/commercial/index.scss';
-@import './blocks/privacy-policy/index.scss';
+@import './blocks/footer/index.scss';
 @import './blocks/prices-services/index.scss';
 @import './blocks/modal-feedback/index.scss';
 @import './blocks/modal-call/index.scss';

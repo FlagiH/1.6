@@ -11,6 +11,7 @@
     min-width: 440px;
     max-width: 440px; 
     position: fixed;
+    padding-left: 16px;
   }
 
   &--hidden {
@@ -92,6 +93,10 @@
         position: absolute;
         left: -16px;
         top: -7px;
+
+        @media (min-width: $screen-laptop) {
+          left: -33px;
+        }
       }   
     }
   }
@@ -126,7 +131,11 @@
       line-height: 16px;
       color: $text-color-muted;
       margin: 0 16px;
-      width: 360px;
+      width: 300px;
+
+      @media (min-width: $screen-laptop) {
+        width: 360px;
+      }
     }
 
     &-color-text {
@@ -134,6 +143,7 @@
       font-family: $font-regular;
       font-size: $font-size-medium;
       line-height: 16px;
+      text-decoration: none;
     }
   }
 }

@@ -13,6 +13,7 @@
     max-width: 440px; 
     position: fixed;
     overflow: inherit;
+    padding-left: 16px;
   }
 
   &--hidden { 
@@ -21,6 +22,7 @@
 
   &-input {
     display: grid;
+    margin-left: 8px;
   }
 
   &__button {
@@ -98,6 +100,10 @@
         position: absolute;
         left: -16px;
         top: -7px;
+
+        @media (min-width: $screen-laptop) {
+          left: -33px;
+        }
       }   
     }
   }
@@ -122,6 +128,7 @@
     
     &--last-element {
       height: 120px;
+      padding-bottom: 85px;
     }
   }
 
@@ -136,7 +143,11 @@
       line-height: 16px;
       color: $text-color-muted;
       margin: 0 16px;
-      width: 360px;
+      width: 300px;
+
+      @media (min-width: $screen-laptop) {
+        width: 360px;
+      }
     }
 
     &-color-text {
@@ -144,6 +155,7 @@
       font-family: $font-regular;
       font-size: $font-size-medium;
       line-height: 16px;
+      text-decoration: none;
     }
   }
 }

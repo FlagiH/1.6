@@ -6,7 +6,6 @@ const backButton = modalFeedBack.querySelector('.button-icon--back');
 const bodyContainer = document.querySelector('.body__content');
 const menu = document.querySelector('.menu-container');
 
-console.log(phoneButtons);
 
 for (let i = 0; i < phoneButtons.length; i++) {
   phoneButtons[i].addEventListener('click', function (e) {

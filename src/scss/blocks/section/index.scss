@@ -36,11 +36,11 @@
       max-height: 245px;
 
       @media (min-width: $screen-tablet) {
-        max-height: 240px;
+        max-height: 235px;
       }
 
       @media (min-width: $screen-laptop) {
-        max-height: 230px;
+        max-height: 240px;
       }
 
       &--active{

@@ -3,9 +3,7 @@
   overflow: auto;
 
   @media (min-width: $screen-square) {
-    & {
       flex-wrap: wrap;
-    }
   }
 
   &::after {
